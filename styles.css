@@ -1,17 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #6ebabf;
-    color: #333;
+    background-color: #000000;
+    color: #ffffff;
     margin: 20px;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: rgb(255, 255, 255);
 }
 
 a {
-    color: darkred;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
