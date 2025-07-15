@@ -18,3 +18,44 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* Style for the main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Style the profile image inside <main> */
+main img {
+  width: 150px;
+  height: auto;
+}
+
+/* Style for the new aside section */
+aside {
+  width: 300px;
+  margin: 1rem auto;
+  border: 1px solid #aaa;
+  padding: 1rem;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+/* Style the image inside the aside */
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Reset padding for all paragraph text */
+p {
+  padding: 0;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 2rem;
+  border-top: 2px solid #ccc;
+  text-align: center;
+}
