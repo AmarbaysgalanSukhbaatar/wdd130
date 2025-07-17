@@ -1,18 +1,18 @@
 :root {
   --primary-color: #4B644A;
-    --secondary-color: #ADFCF9;
+  --secondary-color: #ADFCF9;
   --accent1-color: #89A894;
-    --accent2-color: #341C1C;
+  --accent2-color: #341C1C;
   --text-color: #ffffff;
   --background-color: #f0f0f0;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-
   background-color: var(--background-color);
   margin: 0;
   padding: 0;
+  color: var(--primary-color);
 }
 
 header, footer {
@@ -22,55 +22,105 @@ header, footer {
   text-align: center;
 }
 
+header img {
+  display: block;
+  margin: 0 auto;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+}
+
 nav a:hover {
-  color: var(--accent2-color);
   text-decoration: underline;
+  color: var(--accent2-color);
 }
 
 .hero {
   position: relative;
+  margin-bottom: 2rem;
 }
 
 .hero img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .hero h1 {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 3rem;
-  z-index: 2;
+  top: 30px;
+  left: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  color: var(--text-color);
 }
+
 .hero article {
   position: absolute;
-  top: 100px;
-  left: 20px;
-  width: 300px;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding:10px;
-  border-radius:8px;
+  top: 120px;
+  left: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 6px;
+  max-width: 400px;
+  color: var(--text-color);
 }
 
 .hero article img {
   float: right;
   margin-left: 1rem;
-  max-width: 150px;
+  max-width: 120px;
   height: auto;
+  border-radius: 6px;
+}
+
+section {
+  padding: 1rem 2rem;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
+}
+
+section h2 {
+  font-family: 'Roboto', sans-serif;
+  color: var(--accent2-color);
+}
+
+.adventure-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.adventure-gallery img {
+  width: 19%;
+  border-radius: 6px;
+  height: auto;
+  object-fit: cover;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+footer a {
+  text-decoration: none;
 }
 
 footer a img {
   width: 32px;
   margin: 0 5px;
-}
-footer a {
-  text-decoration: none;
-}
-section {
-  padding: 1rem 2rem;
-  max-width:900px;
-  margin: 2re mauto;
-  color: var(--primary-color);
+  vertical-align: middle;
 }
