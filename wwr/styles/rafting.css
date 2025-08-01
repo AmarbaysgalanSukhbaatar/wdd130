@@ -243,3 +243,41 @@ footer a img {
     margin-bottom: 1rem;
   }
 }
+
+.company-info iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+.team {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+.team img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+.contact-form button {
+  background-color: #4b644a;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #355235;
+}
+.company-info iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
