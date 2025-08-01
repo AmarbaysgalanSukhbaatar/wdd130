@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Contact Rapid River Adventures for a rafting trip inquiries, reservations, and suggestions. We're here to help you plan your next adventure!">
+  <meta charset="utf-8">
+  <meta name="description" content="Contact Rapid River Adventures for trip inquiries, reservations, and website suggestions. Get in touch to plan your next rafting adventure!">
   <meta name="author" content="Amarbaysgalan Sukhbaatar">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us | Rapid River Adventures</title>
@@ -88,9 +88,14 @@
 
          <!-- Purpose of Message -->
          <p>Purpose of Message:</p>
-         <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-         <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-         <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+         <input type="radio" id="general" name="purpose" value="general" required>
+         <label for="general">General Inquiry</label><br>
+
+         <input type="radio" id="reservation" name="purpose" value="reservation">
+         <label for="reservation">Reservation Question</label><br>
+
+         <input type="radio" id="website" name="purpose" value="website">
+         <label for="website">Website Suggestion</label>
 
          <!-- Message -->
          <label for="message">Message:</label>
@@ -98,11 +103,12 @@
 
          <!-- Newsletter Checkbox -->
         <label>
-         <input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter
+         <input type="checkbox" id="newsletter" name="newsletter">
+         <label for="newsletter">Please subscribe me to the monthly newsletter</label>
         </label>
 
         <!-- Submit Button -->
-        <button type="submit">Submit Message</button>
+        <button type="submit">Send Messege</button>
         </form>
       </section>
     </main>
