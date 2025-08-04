@@ -1,58 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <meta name="description" content="Contact Rapid River Adventures for trip inquiries, reservations, and website suggestions. Get in touch to plan your next rafting adventure!">
+
+  
   <meta name="author" content="Amarbaysgalan Sukhbaatar">
+
+
   <title>Contact Us - Rapid River Adventures</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+
+  
+  <link rel="stylesheet" href="styles/rafting.css">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Oswald&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
+
+
+
   <header>
-    <img src="images/logo.png" alt="Rafting Logo" width="120">
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
-    <h1>Contact Us</h1>
-    <p>We'd love to hear from you! Reach out by using the form or our contact information below.</p>
+  <section class="hero">
+    <img src="images/hero.webp" alt="Hero Rafting Image">
+    <h1>Experience the Thrill of Whitewater Rafting</h1>
+    <article>
+      <p>Join us for unforgettable adventures on the river, suitable for all skill levels!</p>
+      <img src="images/logo.png" alt="Rafting Logo">
+    </article>
+  </section>
 
-    <section>
-      <h2>Get in Touch</h2>
-      <ul>
-        <li><strong>Phone:</strong> +976 123-456-789</li>
-        <li><strong>Email:</strong> info@rapidadventures.mn</li>
-        <li><strong>Address:</strong> Riverbank Street 23, Ulaanbaatar, Mongolia</li>
-      </ul>
-    </section>
 
-    <section>
-      <h2>Send Us a Message</h2>
-      <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
+    <main>
+      <!-- Company Info Section -->
+      <section class="company-info">
+        <h2>Contact Information</h2>
+        <p>📍 123 Rapids Lane, River City, CO 80123</p>
+        <p>📞 +1 (800) 555-RAFT</p>
+        <p>📧 info@rapidriveradventures.com</p>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
+        <!-- Embedded Google Map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d36005.59289567069!2d106.97760708697288!3d47.875777278856624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smn!4v1754129120277!5m2!1sen!2smn" 
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+      <!-- Employee Team Section -->
+      <section class="team">
+        <h2>Meet Our Team</h2>
 
-        <input type="submit" value="Send">
-      </form>
-    </section>
-  </main>
+        <figure>
+          <img src="images/employee1.png" alt="Sarah, Customer Support">
+          <figcaption>Sarah  Customer Support</figcaption>
+        </figure>
 
-  <footer>
-    <p>&copy; 2025 Rapid River Adventures Co. | Amarbaysgalan Sukhbaatar</p>
-    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-  </footer>
+        <figure>
+          <img src="images/employee2.png" alt="James, Tour Guide">
+          <figcaption>James  Tour Guide</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/employee3.png" alt="Emma, Reservations Manager">
+          <figcaption>Emma  Reservations Manager</figcaption>
+        </figure>
+      </section>
+
+      <!-- Contact Form Section -->
+      <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form>
+          <!-- Name -->
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <!-- Email -->
+         <label for="email">Your Email:</label>
+         <input type="email" id="email" name="email" required>
+
+         <!-- Purpose of Message -->
+         <p>Purpose of Message:</p>
+         <input type="radio" id="general" name="purpose" value="general" required>
+         <label for="general">General Inquiry</label><br>
+
+         <input type="radio" id="reservation" name="purpose" value="reservation">
+         <label for="reservation">Reservation Question</label><br>
+
+         <input type="radio" id="website" name="purpose" value="website">
+         <label for="website">Website Suggestion</label>
+
+         <!-- Message -->
+         <label for="message">Message:</label>
+         <textarea id="message" name="message" rows="5" required></textarea>
+
+         <!-- Newsletter Checkbox -->
+         <input type="checkbox" id="newsletter" name="newsletter">
+         <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+
+        <!-- Submit Button -->
+        <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="https://app.moqups.com/Y0cSnd7W1qpOOBK5hjHutV0FFSn6rzaf/view/page/ad12de680?ui=0" target="_blank">
+          View Contact Page Wireframe
+        </a>
+      </p>
+          <p>&copy; 2025 Rapid River Adventures Co. | Amarbaysgalan Sukhbaatar</p>
+          <p>Follow us on social media:</p>
+        <a href="#">
+          <img src="images/facebook.png" alt="Facebook">
+        </a>
+        <a href="#">
+          <img src="images/twitter.png" alt="Twitter">
+        </a>
+        <a href="#">
+          <img src="images/instagram.png" alt="Instagram">
+        </a>
+      <p>Website designed by Amarbaysgalan Sukhbaatar</p>
+    </footer>
 </body>
 </html>
