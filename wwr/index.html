@@ -1,32 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home - Rapid River Adventures</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Home page of Rapid River Adventures whitewater rafting trips.">
+  <title>Home | Rapid River Adventures</title>
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Rafting Logo" width="120">
+    <img src="images/logo.png" alt="Rapid River Adventures Logo" class="logo">
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Welcome to Rapid River Adventures!</h1>
-    <p>Get ready for an unforgettable experience.</p>
+    <!-- Hero Section -->
+    <div class="hero">
+      <img src="images/hero.jpg" alt="Rafting on a wild river">
+      <h1 class="hero-text">Ride the Rapids with Us!</h1>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta">
+      <h2>Ready for the Ultimate Adventure?</h2>
+      <a href="trips.html" class="cta-button">Check Out Our Trips</a>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter">
+      <h2>Join Our Adventure Newsletter</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+
+    <!-- Grid Layout with Images and Info -->
+    <section class="grid-info">
+      <div class="info-item">
+        <img src="images/adventure1.jpg" alt="Beginner Rafting">
+        <p>Beginner to expert – find your perfect rafting experience.</p>
+      </div>
+      <div class="info-item">
+        <img src="images/adventure2.jpg" alt="Team Building on the River">
+        <p>Connect and build team spirit with our group packages.</p>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Rapid River Adventures Co. | Amarbaysgalan Sukhbaatar</p>
-    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    <p>©2025 Rapid River Adventures | All Rights Reserved</p>
+    <p><a href="contact.html">Contact Us</a></p>
   </footer>
 </body>
 </html>

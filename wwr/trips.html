@@ -1,48 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="author" content="Amarbaysgalan Sukhbaatar">
-  <title>Trips - Rapid River Adventures</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+  <meta name="description" content="Discover our whitewater rafting trip packages. Adventure options for all skill levels.">
+  <title>Trips | Rapid River Adventures</title>
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Rafting Logo" width="120">
+    <img src="images/logo.png" alt="Rapid River Adventures Logo" class="logo">
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Our Trips</h1>
-    <p>Choose from a variety of river adventures for every skill level and thrill-seeker!</p>
+    <h1>Our Exciting Rafting Trips</h1>
 
-    <section>
-      <h2>Beginner Rapids</h2>
-      <p>Enjoy a calm and scenic trip perfect for first-timers and families. Great for ages 7 and up.</p>
+    <!-- CTA to Contact Page -->
+    <section class="cta">
+      <p>Have questions or want to book your trip?</p>
+      <a href="contact.html" class="cta-button">Contact Us</a>
     </section>
 
-    <section>
-      <h2>Intermediate Challenge</h2>
-      <p>More rapids, more fun! This trip is for people with some experience or looking for moderate thrill.</p>
+    <!-- Three Trip Descriptions -->
+    <section class="trip-descriptions">
+      <div class="trip">
+        <img src="images/beginner-trip.jpg" alt="Beginner rafting trip">
+        <div>
+          <h2>Beginner Rapids Adventure</h2>
+          <p>Perfect for first-timers, this half-day trip features gentle rapids, stunning canyon views, and experienced guides. Safety is our top priority while you have fun.</p>
+        </div>
+      </div>
+
+      <div class="trip">
+        <img src="images/family-trip.jpg" alt="Family rafting trip">
+        <div>
+          <h2>Family Fun Float</h2>
+          <p>A relaxing full-day float suitable for all ages. Includes lunch, stops for swimming, and chances to spot local wildlife. Ideal for families and beginners.</p>
+        </div>
+      </div>
+
+      <div class="trip">
+        <img src="images/extreme-trip.jpg" alt="Advanced rafting trip">
+        <div>
+          <h2>Extreme Whitewater Challenge</h2>
+          <p>Adrenaline junkies welcome! Tackle Class IV and V rapids with our expert team. This advanced trip is physically demanding and requires prior experience.</p>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Extreme Adventure</h2>
-      <p>Fast water, big waves, and the ultimate test of teamwork. Not for the faint of heart!</p>
+    <!-- Trips Table -->
+    <section class="trips-table">
+      <h2>Compare Our Trips</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Trip Name</th>
+            <th>Duration</th>
+            <th>Difficulty</th>
+            <th>Price</th>
+            <th>Included</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Beginner Rapids Adventure</td>
+            <td>3 Hours</td>
+            <td>Easy</td>
+            <td>$65</td>
+            <td>Guide, Safety Gear</td>
+          </tr>
+          <tr>
+            <td>Family Fun Float</td>
+            <td>6 Hours</td>
+            <td>Easy</td>
+            <td>$90</td>
+            <td>Lunch, Guide, Safety Gear</td>
+          </tr>
+          <tr>
+            <td>Extreme Whitewater Challenge</td>
+            <td>5 Hours</td>
+            <td>Hard</td>
+            <td>$120</td>
+            <td>Gear, Snacks, Pro Guide</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Rapid River Adventures Co. | Amarbaysgalan Sukhbaatar</p>
-    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-    <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    <p>©2025 Rapid River Adventures | All Rights Reserved</p>
+    <p><a href="contact.html">Contact Us</a></p>
+    <p><a href="images/trips-wireframe.png" target="_blank">View Trips Page Wireframe</a></p>
   </footer>
 </body>
 </html>
