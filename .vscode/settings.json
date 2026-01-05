@@ -16,7 +16,7 @@
   },
   "editor.parameterHints.enabled": false,
   "editor.suggestOnTriggerCharacters": false,
-  "editor.hover.enabled": false,
+  "editor.hover.enabled": "on",
   "editor.inlineSuggest.enabled": false,
   "html.format.enable": true,
   "html.format.maxPreserveNewLines": 2,
@@ -33,7 +33,7 @@
         "editor.defaultFormatter": "vscode.css-language-features",
     }
   // Git settings for beginners - simplify source control
-  "git.enableSmartCommit": true, // automatically staged
+  ,"git.enableSmartCommit": true, // automatically staged
   "git.confirmSync": false,
   "git.autofetch": true,
   // "git.postCommitCommand": "sync",
@@ -55,7 +55,7 @@
   // Live and Live/Five Server settings
   "fiveServer.port": 5501,
   "fiveServer.injectBody": false,
-  "liveServer.settings.port": 5504/
+  "liveServer.settings.port": 5504,
 
   // disable copilot chat
   "chat.agent.enabled": false,
