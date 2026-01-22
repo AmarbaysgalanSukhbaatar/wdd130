@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: #333;
     padding: 1rem;
@@ -23,14 +29,6 @@ h1 {
     color: #222;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    border: 2px solid #333;
-    padding: 5px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
 aside {
     width: 20rem;
     margin: 1rem;
@@ -54,4 +52,37 @@ footer {
     margin-top: 20px;
     border-top: 2px solid #333;
     text-align: center;
+}
+
+/* =========================
+   Class Selectors
+========================= */
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #333;
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+.profile-img {
+    float: right;
+    margin: 0 0 1rem 1rem;
+    max-width: 200px;
+    border: 3px solid #6b8fb3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+aside {
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.5rem;
 }
