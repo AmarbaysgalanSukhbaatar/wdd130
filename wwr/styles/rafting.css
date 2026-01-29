@@ -64,8 +64,8 @@ nav,
 p,
 section,
 article {
-    margin: 16px;
-    padding: 8px;
+    margin: 1px;
+    padding: 10px;
 }
 
 .hero {
