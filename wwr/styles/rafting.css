@@ -147,6 +147,8 @@ footer {
 .adventure-gallery img {
     max-width: 150px;
     width: 100%;
-    height: auto;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
     text-align: center;
 }
