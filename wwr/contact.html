@@ -7,11 +7,12 @@
     <meta name="description"
       content="Contact Rapid River Adventures for rafting trip bookings, questions, or support. Find our address, phone number, email, and location map.">
     <meta name="author" content="Amarbaysgalan">
-    <title>About Us | Rapid River Adventures</title>
+    <title>Contact Us | Rapid River Adventures</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+
     <header>
         <img src="images/logo.jpeg" alt="Rapid River Adventures Logo">
         <nav>
@@ -24,84 +25,93 @@
         </nav>
     </header>
 
-    <main>
+    <main class="contact-main">
 
+        <!-- COMPANY INFO -->
         <section class="company-info">
             <h1>Contact Rapid River Adventures</h1>
             <p>123 River Street, Kolob, California</p>
-            <p>+1 999 999 9999</p>
+            <p>+1 (999) 999-9999</p>
             <p>info@rapidriverradventures.com</p>
         </section>
 
-        <section class="map">
+        <!-- MAP + FORM GRID -->
+        <section class="contact-grid">
 
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d176922.77794856727!2d-123.13001580568881!3d46.14241386822754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549473141d690d17%3A0xc658b389be7f66b9!2sLongview%2C%20WA%2C%20USA!5e0!3m2!1sen!2smn!4v1770359988234!5m2!1sen!2smn"
-              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <!-- GOOGLE MAP -->
+            <div class="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d176922.77794856727!2d-123.13001580568881!3d46.14241386822754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549473141d690d17%3A0xc658b389be7f66b9!2sLongview%2C%20WA%2C%20USA!5e0!3m2!1sen!2smn!4v1770359988234!5m2!1sen!2smn"
+                  allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
 
+            <!-- CONTACT FORM -->
+            <form action="#" method="post" class="contact-form">
 
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Message Purpose</legend>
+
+                    <label>
+                        <input type="radio" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit" class="submit-btn">
+                    Send Message
+                </button>
+
+            </form>
         </section>
 
+        <!-- EMPLOYEES -->
         <section class="employees">
             <h2>We Are Here to Help You</h2>
 
-            <figure>
-                <img src="images/guide.jpg" alt="Senior Raft Guide">
-                <figcaption>John Smith | Senior Raft Guide</figcaption>
-            </figure>
+            <div class="employee-grid">
+                <figure>
+                    <img src="images/guide.jpg" alt="Senior Raft Guide">
+                    <figcaption>Sarah Smith | Senior Raft Guide</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/manager.jpg" alt="Operations Manager">
-                <figcaption>Sarah Lee | Operations Manager</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/manager.jpg" alt="Operations Manager">
+                    <figcaption>Sarah Lee | Operations Manager</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/support.jpg" alt="Customer Support Lead">
-                <figcaption>Mike Brown | Customer Support Lead</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/support.jpg" alt="Customer Support Lead">
+                    <figcaption>Michael Pershing | Customer Support Lead</figcaption>
+                </figure>
+            </div>
         </section>
 
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-
-        <fieldset>
-            <legend>Message Purpose</legend>
-
-            <label>
-                <input type="radio" name="purpose" value="general" required>
-                General Inquiry
-            </label>
-
-            <label>
-                <input type="radio" name="purpose" value="reservation">
-                Reservation Question
-            </label>
-
-            <label>
-                <input type="radio" name="purpose" value="suggestion">
-                Website Suggestion
-            </label>
-        </fieldset>
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5"></textarea>
-
-        <label>
-            <input type="checkbox" name="subscribe">
-            Please subscribe to the monthly newsletter
-        </label>
-
-        <button type="submit" class="submit-btn">
-            Send Message
-        </button>
-
-
     </main>
-
 
     <footer>
         <p>© 2026 Rapid River Adventures | Amarbaysgalan</p>
@@ -111,6 +121,7 @@
             <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
         </nav>
     </footer>
+
 </body>
 
 </html>
