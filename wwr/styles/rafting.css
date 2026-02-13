@@ -19,17 +19,14 @@ body {
     color: var(--primary-color);
 }
 
-header,
-main,
-footer {
+main {
     width: 840px;
     margin: 0 auto;
 }
 
-header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
+footer {
+    width: 840px;
+    margin: 0 auto;
 }
 
 nav {
@@ -78,17 +75,6 @@ article {
     height: auto;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 1.0;
-    background-color: var(--accent1-color);
-    color: var(--primary-color);
-}
-
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -117,12 +103,6 @@ article {
 .socialmedia img {
     width: 32px;
     height: auto;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .history-content {
@@ -260,4 +240,114 @@ fieldset {
     .contact-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: #556052;
+}
+
+.logo {
+    width: 80px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+}
+
+.btn {
+    background: #d9c3a5;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    text-align: center;
+    padding: 40px;
+}
+
+.newsletter input {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+}
+
+/* FEATURES GRID */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+    padding: 60px;
+}
+
+.features img {
+    width: 100%;
+    max-width: 250px;
+}
+
+/* HIGHLIGHT SECTION */
+.highlight {
+    position: relative;
+    background-color: #e6d3b1;
+    padding: 60px 0;
+}
+
+.highlight img {
+    width: 70%;
+    margin-left: 5%;
+}
+
+.highlight-text {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #6f7a68;
+    color: white;
+    padding: 20px;
+    max-width: 320px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #556052;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
